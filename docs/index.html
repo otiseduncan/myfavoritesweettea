@@ -1,0 +1,113 @@
+<!-- ===================== docs/index.html ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Base handling for both localhost and GitHub Pages (/myfavoritesweettea/) -->
+  <script>(function(){var p=location.hostname.endsWith('.github.io')?('/'+location.pathname.split('/').filter(Boolean)[0]+'/'):'/';var b=document.createElement('base');b.href=p;document.head.prepend(b);}());</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Favorite Sweet Tea — Home</title>
+  <meta name="description" content="Hand-brewed Southern sweet tea. Fresh, simple, unforgettable. Order online or visit us in Milledgeville, GA." />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="My Favorite Sweet Tea" />
+  <meta property="og:description" content="Hand-brewed Southern sweet tea. Fresh, simple, unforgettable." />
+  <meta property="og:image" content="_assets/images/social-card.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Icons/Manifest -->
+  <link rel="icon" href="_assets/images/logo.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <link rel="preload" href="_assets/css/global.css" as="style" />
+  <link rel="stylesheet" href="_assets/css/global.css" />
+  <script defer src="_assets/js/site.js"></script>
+
+  <!-- Structured Data: LocalBusiness (adjust once final details known) -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org","@type":"CafeOrCoffeeShop",
+    "name":"My Favorite Sweet Tea",
+    "image":"https://<your-domain>/myfavoritesweettea/_assets/images/social-card.jpg",
+    "address":{"@type":"PostalAddress","addressLocality":"Milledgeville","addressRegion":"GA","postalCode":"31061","addressCountry":"US"},
+    "telephone":"+1-478-123-4567",
+    "url":"https://<your-domain>/myfavoritesweettea/",
+    "servesCuisine":"Beverages",
+    "openingHours":"Mo-Sa 10:00-20:00"
+  }</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container flex between center">
+      <a class="brand" href="index.html" aria-label="My Favorite Sweet Tea home">
+        <img src="_assets/images/logo.svg" alt="My Favorite Sweet Tea" height="40" />
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-media" role="img" aria-label="Glasses of sweet tea with ice and lemon"></div>
+      <div class="hero-content container">
+        <h1>Sweet tea, done right.</h1>
+        <p>Small-batch brewed with real sugar. Always cold. Always refreshing.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="menu.html">See the Menu</a>
+          <a class="btn btn-ghost" href="locations.html">Find Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container grid-3">
+      <article>
+        <h2>Real Ingredients</h2>
+        <p>Premium tea leaves, pure cane sugar, and filtered water. No shortcuts.</p>
+      </article>
+      <article>
+        <h2>Made Fresh Daily</h2>
+        <p>Brewed in small batches so every pour tastes like the first.</p>
+      </article>
+      <article>
+        <h2>Local & Friendly</h2>
+        <p>Proudly serving Milledgeville, GA with Southern hospitality.</p>
+      </article>
+    </section>
+
+    <section class="promo container">
+      <div class="card">
+        <h3>Try our Seasonal Unsweet + Honey</h3>
+        <p>A lighter spin with a touch of local honey — limited time.</p>
+        <a class="btn btn-secondary" href="menu.html#seasonal">Explore Seasonal</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container grid-3">
+      <div>
+        <strong>My Favorite Sweet Tea</strong><br/>
+        Milledgeville, GA 31061<br/>
+        <a href="tel:+14781234567">(478) 123-4567</a>
+      </div>
+      <nav aria-label="Footer">
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <div class="legal">© <span id="year"></span> My Favorite Sweet Tea. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
