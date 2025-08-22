@@ -50,20 +50,25 @@
     left: 0;
     bottom: 0;
     z-index: 100;
-    padding: 0.5rem 0;
+    padding: 0;
+    height: 120px;
+    display: flex;
+    align-items: center;
   }
   .scroll-images {
     display: flex;
-    gap: 2rem;
+    gap: 0;
     animation: scrollImages 40s linear infinite;
     align-items: center;
+    min-width: 200vw;
   }
   .scroll-images img {
-    height: 60px;
+    height: 120px;
     width: auto;
     border-radius: 0.5rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     object-fit: cover;
+    margin: 0;
   }
   @keyframes scrollImages {
     0% { transform: translateX(0); }

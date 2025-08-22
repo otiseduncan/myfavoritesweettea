@@ -7,6 +7,42 @@
   <meta name="description" content="Privacy policy for My Favorite Sweet Tea." />
   <link rel="stylesheet" href="_assets/css/global.css" />
   <script defer src="_assets/js/site.js"></script>
+    <style>
+      .scroll-banner {
+        width: 100vw;
+        overflow: hidden;
+        background: #fff;
+        border-top: 1px solid #eee;
+        box-shadow: 0 -2px 16px rgba(0,0,0,0.04);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+        padding: 0;
+        height: 120px;
+        display: flex;
+        align-items: center;
+      }
+      .scroll-images {
+        display: flex;
+        gap: 0;
+        animation: scrollImages 40s linear infinite;
+        align-items: center;
+        min-width: 200vw;
+      }
+      .scroll-images img {
+        height: 120px;
+        width: auto;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        object-fit: cover;
+        margin: 0;
+      }
+      @keyframes scrollImages {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+    </style>
 </head>
 <body>
   <main class="container narrow">
