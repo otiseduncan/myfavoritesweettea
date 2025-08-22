@@ -66,4 +66,53 @@
   </main>
   <footer class="site-footer"><div class="container">© <span id="year"></span> My Favorite Sweet Tea</div></footer>
 </body>
+<style>
+  .scroll-banner {
+    width: 100vw;
+    overflow: hidden;
+    background: #fff;
+    border-top: 1px solid #eee;
+    box-shadow: 0 -2px 16px rgba(0,0,0,0.04);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 0.5rem 0;
+  }
+  .scroll-images {
+    display: flex;
+    gap: 2rem;
+    animation: scrollImages 40s linear infinite;
+    align-items: center;
+  }
+  .scroll-images img {
+    height: 60px;
+    width: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    object-fit: cover;
+  }
+  @keyframes scrollImages {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+</style>
+<div class="scroll-banner">
+  <div class="scroll-images">
+    <img src="_assets/images/FB_IMG_1755467599802.jpg" alt="Food item" />
+    <img src="_assets/images/FB_IMG_1755467546403.jpg" alt="Food item" />
+    <img src="_assets/images/FB_IMG_1755467539596.jpg" alt="Food item" />
+    <img src="_assets/images/FB_IMG_1755467533490.jpg" alt="Food item" />
+    <img src="_assets/images/FB_IMG_1755467527467.jpg" alt="Food item" />
+    <img src="_assets/images/FB_IMG_1755467521817.jpg" alt="Food item" />
+    <img src="_assets/images/1000008018.jpg" alt="Food item" />
+    <img src="_assets/images/1000008018.jpg" alt="Food item" />
+    <img src="_assets/images/1000008014.jpg" alt="Drinks item" />
+    <img src="_assets/images/1000008023.jpg" alt="Drinks item" />
+    <img src="_assets/images/1000008024.jpg" alt="Drinks item" />
+    <img src="_assets/images/1000008025.jpg" alt="Drinks item" />
+    <img src="_assets/images/1000008026.jpg" alt="Drinks item" />
+    <img src="_assets/images/1000008027.jpg" alt="Drinks item" />
+  </div>
+</div>
 </html>
